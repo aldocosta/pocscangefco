@@ -62,10 +62,12 @@ namespace BarcodeCaptureSimpleSample.Models
 
             this.BarcodeCaptureSettings.EnableSymbologies(symbologies);
             this.BarcodeCapture = BarcodeCapture.Create(this.DataCaptureContext, this.BarcodeCaptureSettings);
+            
         }
 
         #region DataCaptureContext
         public DataCaptureContext DataCaptureContext { get; private set; }
+        
         #endregion
 
         #region CamerSettings

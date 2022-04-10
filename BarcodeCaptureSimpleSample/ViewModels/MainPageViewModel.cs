@@ -12,6 +12,7 @@
  * limitations under the License.
  */
 
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using BarcodeCaptureSimpleSample.Models;
@@ -136,6 +137,8 @@ namespace BarcodeCaptureSimpleSample.ViewModels
             // Get the human readable name of the symbology and assemble the result to be shown.
             SymbologyDescription description = new SymbologyDescription(barcode.Symbology);
             string result = "Scanned: " + barcode.Data + " (" + description.ReadableName + ")";
+
+            
 
             if (MessageService == null)
             {
