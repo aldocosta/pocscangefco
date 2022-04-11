@@ -13,13 +13,16 @@
  */
 
 using BarcodeCaptureSimpleSample.ViewModels;
+
+using System;
+
 using Xamarin.Forms;
 
 namespace BarcodeCaptureSimpleSample.Views
 {
-    public partial class MainPage : ContentPage
-    {
-        private readonly MainPageViewModel viewModel;
+    public partial class MainPage : ContentPage    {
+
+        private readonly MainPageViewModel viewModel;      
 
         public MainPage()
         {

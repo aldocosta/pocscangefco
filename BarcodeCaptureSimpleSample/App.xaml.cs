@@ -30,7 +30,8 @@ namespace BarcodeCaptureSimpleSample
         public App()
         {
             this.InitializeComponent();
-            this.MainPage = new MainPage();
+            var np = new NavigationPage(new LandingPage());            
+            this.MainPage = np;
 
             DependencyService.Register<IMessageService, MessageService>();
         }

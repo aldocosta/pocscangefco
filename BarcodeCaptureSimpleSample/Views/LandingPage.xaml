@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="Scanner POC V  1.0"
+             x:Class="BarcodeCaptureSimpleSample.Views.LandingPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="AliceBlue">
+
+            
+                <!-- Place new controls here -->
+                <Label Text="Menu de Opções" 
+        HorizontalOptions="Center" TextColor="Black"
+        VerticalOptions="CenterAndExpand"  FontSize="Title"/>
+
+
+
+                <Button Text="Abrir Scanner"
+                Clicked="OnbtnCloseScanClicked"
+                        HorizontalOptions="FillAndExpand"
+                CornerRadius="10" BackgroundColor="CornflowerBlue"
+                        Margin="5"                                     
+                Grid.Column="0"/>
+            
+            <Button Text="Sobre o App"
+                Clicked="OnbtnAboutClicked"
+                        HorizontalOptions="FillAndExpand"
+                CornerRadius="10" BackgroundColor="CornflowerBlue"
+                        Margin="5"                                     
+                Grid.Column="0"/>
+
+            <!--<Button Text="Click to Rotate Text!"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center" 
+                    Clicked="OnbtnCloseScanClicked"
+                 />-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

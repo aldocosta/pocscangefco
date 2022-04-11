@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" Title="Sobre o Aplicativo"
+             xmlns:scanditCore="clr-namespace:Scandit.DataCapture.Core.UI.Unified;assembly=ScanditCaptureCoreUnified"
+             xmlns:scanditBarcode="clr-namespace:Scandit.DataCapture.Barcode.UI.Unified;assembly=ScanditBarcodeCaptureUnified"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BarcodeCaptureSimpleSample.Views.DetailPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="AliceBlue" Orientation="Vertical" Padding="15" >
+            
+            <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" 
+        HorizontalOptions="Center" TextColor="Black"
+        VerticalOptions="Center"  FontSize="Title"/>
+        </StackLayout >
+    </ContentPage.Content>
+</ContentPage>

@@ -10,15 +10,23 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <AbsoluteLayout>
-            <scanditCore:DataCaptureView 
+            <scanditCore:DataCaptureView  x:Name="cam" 
                 AbsoluteLayout.LayoutBounds="0,0,1,1"
                 AbsoluteLayout.LayoutFlags="All"
                 DataCaptureContext="{Binding DataCaptureContext}" >
-                <scanditBarcode:BarcodeCaptureOverlay 
+                <scanditBarcode:BarcodeCaptureOverlay  
                     BarcodeCapture="{Binding BarcodeCapture}" 
                     Viewfinder="{Binding Viewfinder}"
                     Style="Frame" />
             </scanditCore:DataCaptureView>
+
+
+            <Label Text="" x:Name="lblresult"
+        HorizontalOptions="Center" TextColor="Black"
+        VerticalOptions="Center"  FontSize="Title"/>
+
+
         </AbsoluteLayout>
     </ContentPage.Content>
+
 </ContentPage>

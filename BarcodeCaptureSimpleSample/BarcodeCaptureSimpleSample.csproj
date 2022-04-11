@@ -24,4 +24,19 @@
     <PackageReference Include="Scandit.DataCapture.Core.Xamarin.Forms" Version="6.12.0" />
     <PackageReference Include="Scandit.DataCapture.Barcode.Xamarin.Forms" Version="6.12.0" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\DetailPage.xaml.cs">
+      <DependentUpon>DetailPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\DetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\LandingPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>
